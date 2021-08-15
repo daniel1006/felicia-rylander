@@ -20,8 +20,18 @@ const useStyles = makeStyles(theme => {
        },
        title: {
            position: 'absolute',
-           
-       }
+           marginLeft: '15%',
+           [theme.breakpoints.down('sm')]: {
+            marginLeft: '30%',
+          },
+       },
+       title2: {
+        position: 'absolute',
+        marginTop: '10%',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '20%',
+          },
+    }
 }    
 })
 

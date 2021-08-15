@@ -21,7 +21,7 @@ const Navbar = () => {
                 <MuiThemeProvider theme={theme}>
                     <li  className={classes.drawerList}><Link onClick={() => setOpen(false)} className="link" to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Home</Link></li>
                      <li className={classes.drawerList}><Link onClick={() => setOpen(false)} className="link" to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Gallery</Link></li>   
-                     <li className={classes.drawerList}>Links</li>  
+                     <li className={classes.drawerList}><Link onClick={() => setOpen(false)} className="link" to="/links" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Links</Link></li>   
                      <li className={classes.drawerList}>Contact</li>    
                 </MuiThemeProvider>       
             </ul>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Toolbar className={classes.toolBar}>
                       <Typography variant="h4" className={classes.listItem}><Link className="link" to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Home</Link></Typography> 
                       <Typography variant="h4" className={classes.listItem}><Link className="link" to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Gallery</Link></Typography> 
-                      <Typography variant="h4" className={classes.listItem}>Links</Typography> 
+                      <Typography variant="h4" className={classes.listItem}><Link className="link" to="/links" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Links</Link></Typography> 
                       <Typography variant="h4" className={classes.listItem}>Contact</Typography> 
 
                 <div onClick={() => setOpen(!open)} className={classes.menu}>

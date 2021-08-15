@@ -1,0 +1,13 @@
+.btn {		
+    position: absolute;	
+	font-size: 1.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:hover {
+   color: blue;
+}
