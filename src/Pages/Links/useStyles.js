@@ -8,12 +8,11 @@ const useStyles = makeStyles(theme => {
          padding: 0,
       },
       container: {
-         position: 'relative',
-         borderRadius: 0,
          display: 'flex',
          flexDirection: 'column',
-         justifyContent: 'center',
-         alignItems: 'center'
+         justifyContent: 'space-around',
+         alignItems: 'center',
+         position: 'relative',
       },
         media: {
             height: '100vh',

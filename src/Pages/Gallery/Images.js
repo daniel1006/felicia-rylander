@@ -42,7 +42,7 @@ const Images = (props) => {
     return (
         <div className={classes.root}>
             <Typography>Gallery</Typography>
-            <GridList cellHeight={620} spacing={6} cols={cols} className={classes.gridList}>
+            <GridList cellHeight={480} spacing={6} cols={cols} className={classes.gridList}>
             
           <GridListTile cols={2}>
             <div style={{ transform: `translateY(${offsetY * 0.8}px)`}}>  

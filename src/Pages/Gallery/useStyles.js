@@ -22,7 +22,10 @@ const useStyles = makeStyles(theme => {
          position: 'relative',
          width: '100%',
          bottom: '350px',
-       }
+       },
+        link: {
+        paddingTop:'5%',
+      },
 }    
 })
 

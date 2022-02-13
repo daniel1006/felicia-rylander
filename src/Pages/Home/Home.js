@@ -15,7 +15,7 @@ const Home = () => {
             <Grid className={classes.item} item xs={12} sm={12} md={12} lg={12}>
               <Card className={classes.container}>
                <CardMedia  component="img"
-                           src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.6435-9/36609170_10217095190877793_8522792377578946560_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=qhr10fgGfQ4AX9C4aOT&_nc_ht=scontent-arn2-1.xx&oh=0ec2609052d7b7ef3730f54b3defaf30&oe=60F1862E"
+                           src="https://dl.dropboxusercontent.com/s/gecoglurn620flp/felicia%20cover%20photo.jpg?dl=0"
                            title="Services"
                            className={classes.media} /> 
             <MuiThemeProvider theme={theme}>

@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => {
         justifyContent: 'space-around',
        },
        listItem: {
+        fontFamily: 'Georgia, Times New Roman, Times, serif',
          marginTop: '5vmin',
         [theme.breakpoints.down('xs')]: {
             display: 'none',
@@ -30,6 +31,7 @@ const useStyles = makeStyles(theme => {
           },
        },
        list: {
+           fontFamily: 'Georgia, Times New Roman, Times, serif',
            listStyleType: 'none',
            paddingRight: '20px',
            paddingLeft: '20px',
@@ -38,10 +40,23 @@ const useStyles = makeStyles(theme => {
        },
        drawerList: {
            marginBottom: '9vmin',
+           fontFamily: 'Georgia, Times New Roman, Times, serif',
        },
        drawer: {
-         width: '40%',
-       }
+         
+       },
+       MenuItem: {
+            width: "10vmax",
+           [theme.breakpoints.down('xs')]: {
+            width: "20vmax",
+          },
+            fontFamily: 'Georgia, Times New Roman, Times, serif',
+            listStyleType: 'none',
+            fontSize: '3vmin',
+           [theme.breakpoints.down('xs')]: {
+            fontSize: "8vmin",
+          },
+      }
 }    
 })
 

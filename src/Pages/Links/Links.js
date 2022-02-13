@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes,} from '@material-ui/core';
+import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes, List,} from '@material-ui/core';
 import useStyles from './useStyles';
 import './Style.css';
 
@@ -20,7 +20,11 @@ const Links = () => {
                              title="Services"
                              className={classes.media} /> 
               <MuiThemeProvider theme={theme}>
-                  <div className="btn from-left">Facebook</div>
+                 <div className="list">
+                   <div className="btn">Facebook</div>
+                   <div className="btn">Instagram</div>
+                   <div className="btn">OnlyFans</div>
+                 </div>
               </MuiThemeProvider>  
                 </Card>     
               </Grid>
