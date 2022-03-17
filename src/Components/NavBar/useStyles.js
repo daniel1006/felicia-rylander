@@ -6,16 +6,20 @@ const useStyles = makeStyles(theme => {
            flexGrow: 1,
        },
        appBar:{
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgba(61,58,53,255)',
+        height: '15vh',
+        opacity: '0.8',
         boxShadow: 'none',
         [theme.breakpoints.down('xs')]: {
          alignItems: 'flex-end',
        },
        },
+
        toolBar: {
         display: 'flex', 
         alignItems: 'center',
         justifyContent: 'space-around',
+        
        },
        listItem: {
         fontFamily: 'Georgia, Times New Roman, Times, serif',
@@ -46,15 +50,16 @@ const useStyles = makeStyles(theme => {
          
        },
        MenuItem: {
-            width: "10vmax",
+            width: "15vmax",
            [theme.breakpoints.down('xs')]: {
-            width: "20vmax",
+            width: "18vmax",
           },
             fontFamily: 'Georgia, Times New Roman, Times, serif',
             listStyleType: 'none',
             fontSize: '3vmin',
            [theme.breakpoints.down('xs')]: {
-            fontSize: "8vmin",
+            fontSize: "9vmin",
+            width: '25vmax'
           },
       }
 }    

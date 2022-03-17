@@ -58,17 +58,12 @@ const Messaging = () => {
       <style>{`body { margin: 0px; padding: 0px;}`}</style>
 
         <Grid className={classes.item} item xs={12} sm={12} md={12} lg={12}>
-         <Card>
+         <Card className={classes.cardStyle}>
                  <CardMedia  component="img"
-                             src="https://images.unsplash.com/photo-1511111928333-046ec1d3bef6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
+                             src="https://dl.dropboxusercontent.com/s/imw9mp5tdjrj8sv/Felicia6.jpg?dl=0"
                              title="Services"
                              className={classes.media} /> 
-           </Card>
-        </Grid>
-
-      <Container className={classes.container}>
-
-        <Grid className={classes.root} container direction="column" justify="left" alignItems="left" spacing={3}>
+        
                
          <Grid item sm={12} xs={12} md={8} lg={8}> 
 
@@ -140,10 +135,9 @@ const Messaging = () => {
 
                </form>
              </Grid>  
-          
-       </Grid>        
-       </Grid>
-    </Container>   
+           </Grid>
+        </Card>
+      </Grid>   
     </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useStyles from './useStyles';
-import { GridList, GridListTile, Typography, Grid } from '@material-ui/core';
+import { GridList, GridListTile, Typography,} from '@material-ui/core';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './style.css';
@@ -40,22 +40,22 @@ const Images = (props) => {
    
 
     return (
+      <div className={classes.container}>
         <div className={classes.root}>
-            <Typography>Gallery</Typography>
             <GridList cellHeight={480} spacing={6} cols={cols} className={classes.gridList}>
             
           <GridListTile cols={2}>
             <div style={{ transform: `translateY(${offsetY * 0.8}px)`}}>  
-              <img className={classes.firstImage} src={"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"}  />
+              <img className={classes.firstImage} src={"https://dl.dropboxusercontent.com/s/0a9bmmj3yjnxzxx/DSC_6954.jpg?dl=0"}  />
             </div>   
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1543096222-72de739f7917?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"}  />
+                <img src={"https://dl.dropboxusercontent.com/s/ni5pls4x7l7mcf1/feliciarylander_73512673_110237193608074_5066861785948076747_n.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=642&q=80"}  />
+              <img src={"https://dl.dropboxusercontent.com/s/98bkw4zf85n7shz/DSC_6998.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile >
@@ -63,26 +63,27 @@ const Images = (props) => {
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1575921200158-7689087cfb8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"}  />
+              <img src={"https://dl.dropboxusercontent.com/s/am1yogi7n20g2gs/feliciarylander_222154123_582980702690144_2968276575258465474_n.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile cols={3}>
-             <img src={"https://images.unsplash.com/photo-1575921200158-7689087cfb8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"}  />
+             <img src={"https://dl.dropboxusercontent.com/s/imw9mp5tdjrj8sv/Felicia6.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"}  />
+              <img src={"https://dl.dropboxusercontent.com/s/rjew6mr8nygua14/Felicia4_max_red_dark_eyes%201.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1447194047554-cfe888edc98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"}  />
+              <img src={"https://dl.dropboxusercontent.com/s/woabyc6vifkypio/DSC_7014.jpg?dl=0"}  />
           </GridListTile>
 
           <GridListTile >
-              <img src={"https://images.unsplash.com/photo-1469460340997-2f854421e72f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"}  />
+              <img src={"https://dl.dropboxusercontent.com/s/gecoglurn620flp/felicia%20cover%20photo.jpg?dl=0"}  />
           </GridListTile>
       
             </GridList>
+          </div>
         </div>
     )
 }

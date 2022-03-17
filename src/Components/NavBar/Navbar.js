@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Menu, MenuItem, Button} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Menu, MenuItem} from '@material-ui/core';
 
 import useStyles from './useStyles';
-import openMenu from './openMenu';
 import './index.css';
 //import HideOnScroll from './HideOnScroll';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
+//hambuger menu
 const Navbar = () => {
     const classes = useStyles();
     const [open, setOpen] = useState(false)
@@ -26,12 +26,13 @@ const Navbar = () => {
   const HoverMenuClose= () => {
     setAnchorEl(null);
 };
-//
+
+//mobile view
     const list = () => (
         <div>
             <ul  className={classes.list} >
                 <MuiThemeProvider theme={theme}>
-                    <li  className={classes.drawerList}><Link onClick={() => setOpen(false)} className="link" to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Home</Link></li>   
+                    <li  className={classes.drawerList}><Link onClick={() => setOpen(false)} to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Home</Link></li>   
                     <li className={classes.drawerList}>
                           <div onClick={() => setOpen(false)}  
                               style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none", paddingBottom:"6vmin"}}
@@ -49,6 +50,7 @@ const Navbar = () => {
         </div>
     )
   
+// desktop view
     return (
         <div className={classes.root}>
             <AppBar className={classes.appBar}>
@@ -73,7 +75,7 @@ const Navbar = () => {
                           onClose={handleClose2}
                           className={classes.MenuStyle}>
 
-                    <div onMouseLeave={HoverMenuClose} >
+                    <div onMouseLeave={HoverMenuClose}>
                             <MenuItem onClick={handleClose2}  className={classes.MenuItem}>Film Work</MenuItem>
                               <Link onClick={() => setOpen(false)} className="link" to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                                 <MenuItem onClick={handleClose2} className={classes.MenuItem}> Portfolio</MenuItem>

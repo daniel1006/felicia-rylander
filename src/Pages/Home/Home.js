@@ -16,7 +16,6 @@ const Home = () => {
               <Card className={classes.container}>
                <CardMedia  component="img"
                            src="https://dl.dropboxusercontent.com/s/gecoglurn620flp/felicia%20cover%20photo.jpg?dl=0"
-                           title="Services"
                            className={classes.media} /> 
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>Felicia</Typography> 

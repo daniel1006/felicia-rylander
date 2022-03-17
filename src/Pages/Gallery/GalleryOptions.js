@@ -13,7 +13,7 @@ const GalleryOptions = () => {
         <Grid item sm={6} xs={6} md={4} lg={4}>
           <Link to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
             <CardMedia component="img"
-                        image="https://images.unsplash.com/photo-1612904370314-68f344e324dd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVsJTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        image="https://dl.dropboxusercontent.com/s/am1yogi7n20g2gs/feliciarylander_222154123_582980702690144_2968276575258465474_n.jpg?dl=0"
                         title="Services"
                         className={classes.media} />
          </Link>

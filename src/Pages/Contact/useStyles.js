@@ -6,12 +6,15 @@ const useStyles = makeStyles(theme => {
          overflow: 'hidden',
       },
       container: {
-         margin: 0,
-         padding: 0,
+         height:'100%',
+      },
+      cardStyle: {
+         position: 'relative',
+         borderRadius: 0,
       },
        media: {
-            height: '100vh',
-            objectFit: 'cover',
+           height: '100vh',
+           
         },
       form: {
             position: 'absolute',
