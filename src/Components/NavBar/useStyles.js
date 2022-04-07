@@ -6,9 +6,8 @@ const useStyles = makeStyles(theme => {
            flexGrow: 1,
        },
        appBar:{
-        backgroundColor: 'rgba(61,58,53,255)',
+        backgroundColor: 'transparent',
         height: '15vh',
-        opacity: '0.8',
         boxShadow: 'none',
         [theme.breakpoints.down('xs')]: {
          alignItems: 'flex-end',

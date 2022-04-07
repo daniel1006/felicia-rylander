@@ -40,7 +40,7 @@ const Navbar = () => {
                               aria-controls={open2 ? 'basic-menu' : undefined}
                               aria-haspopup="true"
                               aria-expanded={open2 ? 'true' : undefined}
-                              onClick={handleClick}>Portfolio
+                              onClick={handleClick}>Gallery
                           </div>
                      <li className={classes.drawerList}><Link onClick={() => setOpen(false)} to="/links" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Links</Link></li>   
                      <li className={classes.drawerList}><Link onClick={() => setOpen(false)} className="messaging" to="/Messaging" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contacts</Link></li> 
@@ -76,11 +76,15 @@ const Navbar = () => {
                           className={classes.MenuStyle}>
 
                     <div onMouseLeave={HoverMenuClose}>
-                            <MenuItem onClick={handleClose2}  className={classes.MenuItem}>Film Work</MenuItem>
+                              <Link onClick={() => setOpen(false)} className="link" to="/filmwork" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
+                                <MenuItem onClick={handleClose2}  className={classes.MenuItem}>Film Work</MenuItem>
+                              </Link>
                               <Link onClick={() => setOpen(false)} className="link" to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                                 <MenuItem onClick={handleClose2} className={classes.MenuItem}> Portfolio</MenuItem>
                               </Link>
-                            <MenuItem onClick={handleClose2} className={classes.MenuItem}>Resume</MenuItem>
+                              <Link onClick={() => setOpen(false)} className="link" to="/resume" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
+                                <MenuItem onClick={handleClose2} className={classes.MenuItem}>Resume</MenuItem>
+                              </Link>
                     </div>
                   </Menu>
 

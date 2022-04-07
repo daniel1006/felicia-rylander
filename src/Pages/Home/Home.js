@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes,} from '@material-ui/core';
+import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes, container, Container} from '@material-ui/core';
 import useStyles from './useStyles';
 
 let theme = createMuiTheme();
@@ -21,7 +21,7 @@ const Home = () => {
               <Typography variant="h1" className={classes.title}>Felicia</Typography> 
               <Typography variant="h1" className={classes.title2}>Rylander</Typography> 
             </MuiThemeProvider>  
-              </Card>     
+              </Card>  
             </Grid>
         </Grid>
        </div>

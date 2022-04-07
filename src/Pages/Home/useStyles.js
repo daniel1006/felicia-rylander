@@ -3,15 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
     return {
         greetings: {
-            margin: 0,
-            padding: 0,
-            height: '100vh',
+            margin: "0px",
+            padding: "0px",
+            height: '100%',
         },
         container: {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
+          position: 'relative',
+        borderRadius: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
         },
         media: {
             height: '100vh',

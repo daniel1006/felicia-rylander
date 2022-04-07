@@ -6,7 +6,7 @@ import { Typography, CardMedia, Grid } from '@material-ui/core';
 const GalleryOptions = () => {
    const classes = useStyles();
 ; 
-
+// don't know wtf this page is for
     return (
         <div>
 
