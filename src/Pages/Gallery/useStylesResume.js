@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
    return {
   Box:{
-    textAlign:'center',
     paddingTop: '10%',
     padding:'5%',
     [theme.breakpoints.down('sm')]: {
@@ -18,27 +17,32 @@ const useStyles = makeStyles(theme => {
   Underline:{
     borderBottom: '5px solid #2E2D29'
 },
-  Dot: {
-    borderRadius:'75%',
-    backgroundColor:'grey',
-    display:'inline-block',
-    height:'18px',
-    weight:'20px',
-    paddingLeft:'15px',
-    marginLeft:'5px',
-},
-  Cdot: {
-    borderRadius:'75%',
-    backgroundColor:'blue',
-    display:'inline-block',
-    height:'18px',
-    weight:'20px',
-    paddingLeft:'15px',
-    marginLeft:'5px',
-},
 Line: {
 display:'inline-block',
 },
+
+Left: {
+backgroundColor: 'rgb(28,40,65)',
+textAlign:'center',
+},
+
+PofileBody: {
+paddingTop: '5%',
+textAlign:'justify',
+},
+
+LeftIcons: {
+paddingTop: '7%',
+verticalAlign: 'middle',
+textAlign: 'center',
+width:'100%',
+},
+
+LeftUnderline: {
+paddingTop: '10%',
+borderBottom: '2px solid white',
+},
+
 }    
 })
 
