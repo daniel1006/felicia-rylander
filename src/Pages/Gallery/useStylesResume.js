@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
    return {
   Box:{
-    paddingTop: '10%',
+    paddingTop: '15%',
     padding:'5%',
     [theme.breakpoints.down('sm')]: {
-            paddingTop: '25%',
+            paddingTop: '30%',
             padding:'0%',
         },
     overflow: 'hidden',
@@ -14,9 +14,22 @@ const useStyles = makeStyles(theme => {
   Grid: {
     overflowY:'scroll',
 },
-  Underline:{
-    borderBottom: '5px solid #2E2D29'
+
+Title:{
+backgroundColor:'#F5F5DC',
+textAlign: 'right',
 },
+
+TextTitle: {
+},
+
+TextBlock: {
+width: '75%',
+float: 'right',
+textAlign: 'left',
+textAlign:'justify',
+},
+
 Line: {
 display:'inline-block',
 },
@@ -31,6 +44,11 @@ paddingTop: '5%',
 textAlign:'justify',
 },
 
+RightIcon: {
+float: 'left',
+fontSize: '6vmax'
+},
+
 LeftIcons: {
 paddingTop: '7%',
 verticalAlign: 'middle',
@@ -41,6 +59,10 @@ width:'100%',
 LeftUnderline: {
 paddingTop: '10%',
 borderBottom: '2px solid white',
+},
+
+Skills: {
+paddingTop: '5%',
 },
 
 }    
