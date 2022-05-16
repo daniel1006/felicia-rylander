@@ -20,14 +20,38 @@ backgroundColor:'#F5F5DC',
 textAlign: 'right',
 },
 
+PageTitle: {
+float: 'center',
+width: '85%',
+marginTop: '5%',
+marginLeft: '3%',
+},
+
 TextTitle: {
+float: 'right',
+width: '85%',
+textAlignLast:'left',
 },
 
 TextBlock: {
-width: '75%',
+paddingTop: '1%',
+width: '85%',
 float: 'right',
 textAlign: 'left',
 textAlign:'justify',
+},
+
+TextDate: {
+display: 'inline-block'
+},
+
+EducationLine: {
+width: '85%',
+backgroundColor: 'rgb(28,40,65)',
+float: 'right',
+height: '2px',
+border: 'none',
+marginBottom:'5vh',
 },
 
 Line: {

@@ -1,18 +1,30 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Menu, MenuItem} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Menu, MenuItem, } from '@material-ui/core';
+
+import SpeedDial from '@mui/material/SpeedDial';
+import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+import SpeedDialAction from '@mui/material/SpeedDialAction';
 
 import useStyles from './useStyles';
 import './index.css';
+import { fontSize } from '@mui/system';
 //import HideOnScroll from './HideOnScroll';
+
+const Navbar = () => {
+    const classes = useStyles();
+    const [open, setOpen] = useState(false)
+
+
+const actions = [
+  { icon: <Link className={classes.Link} to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Home</Link> },
+
+];
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 //hambuger menu
-const Navbar = () => {
-    const classes = useStyles();
-    const [open, setOpen] = useState(false)
 
 //menu accordian
  const [anchorEl, setAnchorEl] = React.useState(null);
@@ -26,6 +38,8 @@ const Navbar = () => {
   const HoverMenuClose= () => {
     setAnchorEl(null);
 };
+
+
 
 //mobile view
     const list = () => (
@@ -67,6 +81,24 @@ const Navbar = () => {
                       </Typography> 
                       <Typography variant="h4" className={classes.listItem}><Link to="/links" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Links</Link></Typography> 
                       <Typography variant="h4" className={classes.listItem}><Link className="messaging" to="/Messaging" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Typography> 
+
+     <SpeedDial
+        ariaLabel="SpeedDial basic example"
+        icon={<SpeedDialIcon />}
+        direction={'left'}
+        FabProps={{ size: "large", style: { backgroundColor: "#ff0000", } }}
+
+      >
+    
+         {actions.map((actions) => (
+          <SpeedDialAction
+            icon={actions.icon}
+            tooltipOpen
+            style={{fontSize:'55px', }}
+          />
+        ))}
+        
+      </SpeedDial>
 
                   <Menu
                           id="basic-menu"

@@ -60,7 +60,13 @@ const useStyles = makeStyles(theme => {
             fontSize: "9vmin",
             width: '25vmax'
           },
-      }
+      },
+
+      Link: {
+            fontSize:'55px',
+},
+
+
 }    
 })
 

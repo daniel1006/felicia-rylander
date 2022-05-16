@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Box, Typography,} from '@material-ui/core';
 import useStylesResume from './useStylesResume';
-import { CallOutlined, EmailOutlined, LocationOnOutlined, PermIdentityOutlined,  } from '@material-ui/icons';
+import { CallOutlined, EmailOutlined, LocationOnOutlined, SchoolOutlined,  } from '@material-ui/icons';
 
 import './style.css'
 
@@ -17,10 +17,9 @@ const Resume = () => {
           <Typography variant="h2">Rylander</Typography>
         </Grid>
 
-        <Grid className={classes.Title} item xs={7} lg={9}>
+        <Grid className={classes.Title} item xs={6} lg={9}>
           <div className="F">F</div>
-          <Typography variant="h3">26 years old</Typography>
-          <Typography variant="h3">Actress & Pool Contractor</Typography>
+          <Typography className={classes.PageTitle} variant="h3">Actress & Pool Contractor</Typography>
         </Grid>
 
         <Grid className={classes.Left} item xs={5} lg={3}>
@@ -29,9 +28,9 @@ const Resume = () => {
           <div className={classes.LeftUnderline}></div>
         </Grid>
 
-        <Grid item xs={7} lg={9}>
-          <PermIdentityOutlined className={classes.RightIcon}/>
-          <Typography className={classes.TextTitle} variant="h4">About me</Typography>
+        <Grid item xs={6} lg={9}>
+          <Typography className={classes.TextTitle} variant="h4">Education</Typography> <hr className={classes.EducationLine} />
+          <Typography className={classes.TextTitle} variant="h5"> School Name / <Typography className={classes.TextDate} variant="h6"> 2010-2015 </Typography> </Typography> 
           <Typography className={classes.TextBlock} body="1">A two-inch layer of freshly fallen snow covered the yard. Stacey peeked outside. To most, it would have been a beautiful sight worthy of taking a photo to put on Instagram. For Stacey, it meant something different. The first snow of the year brought back the witches as the fairies in the yard had to seek shelter to avoid the cold.</Typography>
         </Grid>
 
@@ -48,10 +47,10 @@ const Resume = () => {
           <div className={classes.LeftUnderline}></div>        
         </Grid>
 
-        <Grid item xs={7} lg={9}>
-          <Typography variant="h4">work history</Typography>
-          <Typography variant="h5">2009 - 2013</Typography>
-          <Typography body="1">She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.</Typography>
+        <Grid item xs={5} lg={9}>
+          <Typography className={classes.TextTitle} variant="h4">work history</Typography> <hr className={classes.EducationLine} />
+          <Typography className={classes.TextTitle} variant="h5"> Work name / <Typography className={classes.TextDate} variant="h6"> 2010-2015 </Typography> </Typography>
+          <Typography className={classes.TextBlock} body="1">She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.</Typography>
         </Grid>
 
 
@@ -63,10 +62,9 @@ const Resume = () => {
           <Typography variant="h6">Standing</Typography>
         </Grid>
 
-        <Grid item xs={7} lg={9}>
-          <Typography variant="h4">work history</Typography>
-          <Typography variant="h5">2009 - 2013</Typography>
-          <Typography body="1">She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.</Typography>
+        <Grid item xs={5} lg={9}>
+          <Typography className={classes.TextTitle} variant="h5"> Work name / <Typography className={classes.TextDate} variant="h6"> 2010-2015 </Typography> </Typography>
+          <Typography className={classes.TextBlock} body="1">She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.</Typography>
         </Grid>
 
       </Grid>
