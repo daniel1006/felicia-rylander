@@ -21,11 +21,9 @@ const useStyles = makeStyles(theme => {
         
        },
        listItem: {
-        fontFamily: 'Georgia, Times New Roman, Times, serif',
-         marginTop: '5vmin',
-        [theme.breakpoints.down('xs')]: {
-            display: 'none',
-          },
+            textDecoration:"none",
+            color:"rgba(0, 0, 0, 0.87)",
+            fontSize:'2vmax',
        },
        menu: {
           display: 'none',
@@ -63,8 +61,10 @@ const useStyles = makeStyles(theme => {
       },
 
       Link: {
-            fontSize:'55px',
+            fontSize:'2vmax',
 },
+
+
 
 
 }    
