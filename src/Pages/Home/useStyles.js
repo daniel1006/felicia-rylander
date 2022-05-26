@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { ArrowRight } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => {
     return {
@@ -7,16 +8,11 @@ const useStyles = makeStyles(theme => {
             padding: "0px",
             height: '100%',
         },
-        container: {
-          position: 'relative',
-        borderRadius: 0,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
-        },
         media: {
-            height: '100vh',
+            backgroundColor: 'pink',
+            width: '50%',
+            height: '50',
+            position: 'absolute',
         },
         title: {
             fontFamily: 'Georgia, Times New Roman, Times, serif',

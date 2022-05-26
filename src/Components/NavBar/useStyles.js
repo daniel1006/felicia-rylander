@@ -17,35 +17,22 @@ const useStyles = makeStyles(theme => {
        toolBar: {
         display: 'flex', 
         alignItems: 'center',
-        justifyContent: 'space-around',
-        
+        justifyContent: 'end',
+        marginRight:"5vmin",
+        [theme.breakpoints.down('md')]: {
+         marginRight:"0",
+       },
        },
        listItem: {
             textDecoration:"none",
             color:"rgba(0, 0, 0, 0.87)",
-            fontSize:'2vmax',
-       },
-       menu: {
-          display: 'none',
-          [theme.breakpoints.down('xs')]: {
-            display: 'block',
+            fontSize:'3vmin',
+            [theme.breakpoints.down('xs')]: {
+              fontSize:'6vmin',
           },
        },
-       list: {
-           fontFamily: 'Georgia, Times New Roman, Times, serif',
-           listStyleType: 'none',
-           paddingRight: '20px',
-           paddingLeft: '20px',
-           textAlign: 'center',
-           fontSize: '17vmin',
-       },
-       drawerList: {
-           marginBottom: '9vmin',
-           fontFamily: 'Georgia, Times New Roman, Times, serif',
-       },
-       drawer: {
-         
-       },
+  
+// drawer menu
        MenuItem: {
             width: "15vmax",
            [theme.breakpoints.down('xs')]: {
@@ -61,11 +48,11 @@ const useStyles = makeStyles(theme => {
       },
 
       Link: {
-            fontSize:'2vmax',
+            fontSize:'3vmin',
+           [theme.breakpoints.down('xs')]: {
+            fontSize:'6vmin',
+          },
 },
-
-
-
 
 }    
 })
