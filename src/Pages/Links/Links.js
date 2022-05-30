@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes, List,} from '@material-ui/core';
+import { Card, Grid, CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes, } from '@material-ui/core';
 import useStyles from './useStyles';
 import './Style.css';
 

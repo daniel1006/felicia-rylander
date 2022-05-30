@@ -16,8 +16,12 @@ const useStyles = makeStyles(theme => {
 },
 
 Title:{
-backgroundColor:'#F5F5DC',
+backgroundColor:'rgb(244,207,191)',
 textAlign: 'right',
+},
+
+titleDetail: {
+
 },
 
 PageTitle: {
@@ -47,7 +51,7 @@ display: 'inline-block'
 
 EducationLine: {
 width: '85%',
-backgroundColor: 'rgb(28,40,65)',
+backgroundColor: 'rgba(17,35,47,1)',
 float: 'right',
 height: '2px',
 border: 'none',
@@ -58,8 +62,19 @@ Line: {
 display:'inline-block',
 },
 
+Card: {
+height: '30vh',
+
+},
+
+Media: {
+height: '100%',
+objectFit: 'cover',
+objectPosition: '100% 14%',
+},
+
 Left: {
-backgroundColor: 'rgb(28,40,65)',
+backgroundColor: 'rgba(17,35,47,1)',
 textAlign:'center',
 },
 

@@ -26,9 +26,7 @@ const Navbar = () => {
     setAnchorEl(event.currentTarget); 
   };
 
-  const handleClose2 = () => {
-    setAnchorEl(null);
-  };
+ 
   const HoverMenuClose= () => {
     setAnchorEl(null);
 };
