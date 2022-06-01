@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
    return {
   Box:{
-    paddingTop: '15%',
+    paddingTop: '10%',
     padding:'5%',
     [theme.breakpoints.down('sm')]: {
             paddingTop: '30%',
@@ -16,25 +16,23 @@ const useStyles = makeStyles(theme => {
 },
 
 Title:{
-backgroundColor:'rgb(244,207,191)',
-textAlign: 'right',
+backgroundColor:'rgb(244,207,191)', 
+textAlign: 'center',
+height: '33.9vh',
 },
 
 titleDetail: {
-
+backgroundColor: 'rgba(17,35,47,1)',
 },
 
 PageTitle: {
-float: 'center',
-width: '85%',
+width: '100%',
 marginTop: '5%',
-marginLeft: '3%',
 },
 
 TextTitle: {
 float: 'right',
 width: '85%',
-textAlignLast:'left',
 },
 
 TextBlock: {
@@ -64,7 +62,6 @@ display:'inline-block',
 
 Card: {
 height: '30vh',
-
 },
 
 Media: {
@@ -97,7 +94,7 @@ width:'100%',
 
 LeftUnderline: {
 paddingTop: '10%',
-borderBottom: '2px solid white',
+borderBottom: '2px solid #90AEB0',
 },
 
 Skills: {

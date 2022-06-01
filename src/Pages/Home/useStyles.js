@@ -25,20 +25,25 @@ const useStyles = makeStyles(theme => {
             marginLeft: '2.5vw',
         },
         title: {
-            marginTop: '28vh',
-            marginLeft: '10vw',
+            marginTop: '5vh',
+            marginLeft: '11vw',
             position: 'relative',
             fontFamily: 'Georgia, Times New Roman, Times, serif',
             [theme.breakpoints.down('sm')]: {
             },
         },
         title2: {
-             marginLeft: '14vw',
+            marginLeft: '15vw',
             position: 'relative',
             fontFamily: 'Georgia, Times New Roman, Times, serif',
             [theme.breakpoints.down('sm')]: {
             },
-        }
+        },
+        HomeTitles: {
+            position: 'relative',
+            marginLeft: '10vw',
+            marginTop: '8vh',
+        },
     }
 })
 

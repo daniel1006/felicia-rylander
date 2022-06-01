@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => {
       },
         media: {
             height: '100vh',
+            objectFit: 'cover',
         },
     
 }    

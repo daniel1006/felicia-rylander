@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useStyles from './useStyles';
-import { GridList, GridListTile, Typography,} from '@material-ui/core';
+import { GridList, GridListTile,} from '@material-ui/core';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './style.css';

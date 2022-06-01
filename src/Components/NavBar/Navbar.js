@@ -60,7 +60,7 @@ const actions = [
         ariaLabel="SpeedDial basic example"
         icon={<SpeedDialIcon /> }
         direction={'down'}
-        FabProps={{ size: "large", style: { backgroundColor: "#ff0000", marginTop: "525px"} }}
+        FabProps={{ size: "large", style: { backgroundColor: "#90AEB0", marginTop: "525px"} }}
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
@@ -70,7 +70,7 @@ const actions = [
           <SpeedDialAction
             icon={actions.icon}
             tooltipTitle=""
-            FabProps={{ style: { backgroundColor: "pink", width: "109px", height: "109px", } }}
+            FabProps={{ style: { backgroundColor: "transparent", outline: 'solid #90AEB0 3px', width: "109px", height: "109px", } }}
             onClick={handleClose}
             className={classes.menuCircle}
           />

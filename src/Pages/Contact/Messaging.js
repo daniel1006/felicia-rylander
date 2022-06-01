@@ -1,9 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, CircularProgress, Container, Card, CardMedia } from '@material-ui/core';
+import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, CircularProgress, } from '@material-ui/core';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import useStyles from './useStyles';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
+
+import './style.css';
+
 init("user_DnQCMfVnzpijnE8OO27EX")
 
 let theme = createMuiTheme();
@@ -55,26 +59,27 @@ const Messaging = () => {
     return (
       <div className={classes.firstDiv}>
 
-      <style>{`body { margin: 0px; padding: 0px;}`}</style>
+      <div className="backGround">
 
-        <Grid className={classes.item} item xs={12} sm={12} md={12} lg={12}>
-         <Card className={classes.cardStyle}>
-                 <CardMedia  component="img"
-                             src="https://dl.dropboxusercontent.com/s/imw9mp5tdjrj8sv/Felicia6.jpg?dl=0"
-                             title="Services"
-                             className={classes.media} /> 
-        
-               
-         <Grid item sm={12} xs={12} md={8} lg={8}> 
+      <style>{`body { margin: 0px; padding: 0px;}`}</style>
 
           <MuiThemeProvider theme={theme}>
           </MuiThemeProvider> 
 
-          <Grid className={classes.grid3} container justify="center" direction="column" item sm={12} xs={12} md={12} lg={12}> 
+          <Grid className={classes.grid3} container justifyContent='center' alignItems='center' direction="column"> 
+      
+          <div className={classes.whiteBackground}> </div>
+
+          <Typography variant='h2' className={classes.contactTitle}>Contact</Typography>
+          <Typography variant='h5' className={classes.contactTitle}>daniellanthier2@gmail.com</Typography>
+          <Typography className={classes.Icons}> <FacebookIcon/> <InstagramIcon/> </Typography>
+
+        <Grid className={classes.gridItem} item xs={12} sm={12} md={12} lg={12}>
          <form className={classes.form}
                id='service_8il6dbb'
-               onSubmit={handleSubmit(onSubmit)}>         
-        <div>
+               onSubmit={handleSubmit(onSubmit)}>       
+
+           <div>
                 <TextField
                        className={classes.textInput}
                        variant="outlined"
@@ -85,7 +90,18 @@ const Messaging = () => {
                        error={errors.user_name}
                        helperText={errors.user_name && "Name is required"}
                        {...register('user_name', { required: true, maxLength:20})}/> 
+
+                <TextField 
+                          className={classes.textInput}
+                          margin="normal"
+                          variant="outlined"
+                          name='topic' 
+                          label="Subject" 
+                          error={errors.topic}
+                          helperText={errors.topic && "Must enter a subject matter"}
+                          {...register('topic', { required: true, maxLength:20})}/> 
           </div>
+
            <div> 
                 <TextField 
                       className={classes.textInput}
@@ -98,17 +114,7 @@ const Messaging = () => {
                        helperText={errors.user_email && "Email is not valid"}
                       {...register('user_email', { required: true, pattern: /^\S+@\S+\.\S+$/ })}/> 
           </div>
-           <div>
-                 <TextField 
-                          className={classes.textInput}
-                          margin="normal"
-                          variant="outlined"
-                          name='topic' 
-                          label="Subject" 
-                          error={errors.topic}
-                          helperText={errors.topic && "Must enter a subject matter"}
-                          {...register('topic', { required: true, maxLength:20})}/> 
-          </div>
+
            <div>
                 <TextField 
                           className={classes.message}
@@ -121,7 +127,8 @@ const Messaging = () => {
                           helperText={errors.message && "Must enter a message"}
                           {...register('message', { required: true, maxLength:3000})}/> 
            </div>
- 
+
+
                <div className={classes.wrapper}>
                <Button  className={classes.button}
                         variant="outlined" 
@@ -134,10 +141,9 @@ const Messaging = () => {
                 </div>
 
                </form>
-             </Grid>  
-           </Grid>
-        </Card>
-      </Grid>   
+        </Grid>
+      </Grid>
+     </div> 
     </div>
     )
 }

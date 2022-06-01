@@ -3,23 +3,22 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
    return {
       firstDiv: {
-         overflow: 'hidden',
       },
-      container: {
-         height:'100%',
-      },
-      cardStyle: {
-         position: 'relative',
-         borderRadius: 0,
-      },
-       media: {
-           height: '100vh',
-           
-        },
-      form: {
+      whiteBackground: {
             position: 'absolute',
-            top: '25%',
-            left: '25%',
+            backgroundColor: 'white',
+            width: '75%',
+            height: '80%',
+            opacity: '0.7',
+      },
+      contactTitle: {
+            position: 'relative',
+      },
+      Icons: { 
+            position: 'relative',
+      },
+      textInput: {
+            width: '50%',
      },
 }    
 })

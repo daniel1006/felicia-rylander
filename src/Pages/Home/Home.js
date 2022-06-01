@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Card, Grid, Typography,  CardMedia, createMuiTheme, MuiThemeProvider, responsiveFontSizes, } from '@material-ui/core';
 import useStyles from './useStyles';
 import "./Homestyle.css"
@@ -22,8 +23,10 @@ const Home = () => {
 
           <Grid className={classes.gridItem} item xs={5} sm={5} md={5} lg={5}>
              <MuiThemeProvider theme={theme}>
-                <Typography variant="h1" className={classes.title}>Felicia</Typography> 
-                <Typography variant="h1" className={classes.title2}>Rylander</Typography> 
+              
+                <Typography variant="h1" className={classes.title}> <Link to="/images" style={{color:"#000000", textDecoration: "none"}}> Felicia </Link></Typography> 
+                <Typography variant="h1" className={classes.title2}> <Link to="/images" style={{color:"#000000", textDecoration: "none"}}> Rylander </Link></Typography> 
+                  <Typography className={classes.HomeTitles} variant="h4">Model | Actress | Pool Contractor</Typography>
              </MuiThemeProvider>  
           </Grid>
        

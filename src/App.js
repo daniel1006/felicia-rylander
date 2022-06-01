@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
-import { NavBar, Home, Images, Links, Messaging, GalleryOptions, FilmWork, Resume } from './Components';
+import { NavBar, Home, Images, Links, Messaging,FilmWork, Resume } from './Components';
 import './index.css';
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
      <NavBar/>
        <Switch>
          <Route  path="/" exact component={props => <Home {...props} />} />
-         <Route path="/galleryOptions" component={GalleryOptions}> <GalleryOptions/> </Route>
          <Route path="/images" component={Images}> <Images/> </Route>
          <Route path="/filmwork" component={FilmWork}> <FilmWork/> </Route>
          <Route path="/links" component={Links}> <Links/> </Route>
