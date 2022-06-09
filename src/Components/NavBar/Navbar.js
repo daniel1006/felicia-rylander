@@ -6,6 +6,9 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import useStyles from './useStyles';
 
 //import HideOnScroll from './HideOnScroll';
@@ -45,7 +48,7 @@ const actions = [
                               onClick={handleClick}> Gallery
                             </Link> },
 
- {icon: <Link className={classes.Link} to="/links" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Links</Link> },
+ {icon: <Link className={classes.Link} to="/Resume" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>About Me</Link> },
  {icon: <Link className={classes.Link} to="/Messaging" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link>},
 ];
   
@@ -65,7 +68,7 @@ const actions = [
         onOpen={handleOpen}
         open={open}
         >
-    
+
          {actions.map((actions) => (
           <SpeedDialAction
             icon={actions.icon}
@@ -75,7 +78,7 @@ const actions = [
             className={classes.menuCircle}
           />
         ))}
-        
+       
       </SpeedDial>
 
                   <Menu
@@ -90,9 +93,6 @@ const actions = [
                               </Link>
                               <Link onClick={() => setOpen(false)} to="/images" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                                 <MenuItem onClick="{handleClose2} {handleClose}" className={classes.MenuItem}> Portfolio</MenuItem>
-                              </Link>
-                              <Link onClick={() => setOpen(false)} to="/resume" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
-                                <MenuItem onClick="{handleClose2} {handleClose}" className={classes.MenuItem}>Resume</MenuItem>
                               </Link>
                     </div>
                   </Menu>

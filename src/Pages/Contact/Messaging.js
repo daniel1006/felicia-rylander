@@ -13,7 +13,6 @@ init("user_DnQCMfVnzpijnE8OO27EX")
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
-
 const Messaging = () => {
     const classes = useStyles();
     
@@ -55,9 +54,8 @@ const Messaging = () => {
     }
   };
 
-      
     return (
-      <div className={classes.firstDiv}>
+      <div className={classes.root}>
 
       <div className="backGround">
 
@@ -70,9 +68,14 @@ const Messaging = () => {
       
           <div className={classes.whiteBackground}> </div>
 
-          <Typography variant='h2' className={classes.contactTitle}>Contact</Typography>
-          <Typography variant='h5' className={classes.contactTitle}>daniellanthier2@gmail.com</Typography>
-          <Typography className={classes.Icons}> <FacebookIcon/> <InstagramIcon/> </Typography>
+          <Typography variant='h1' className={classes.contactTitle}>Contact</Typography>
+          <Typography variant='h6' className={classes.contactTitle}>daniellanthier2@gmail.com</Typography>
+          <Typography className={classes.Icons}> 
+
+            <a target="_blank" href="https://www.facebook.com/felicia.rylander.3" style={{color:"black", textDecoration: "none"}}> <FacebookIcon fontSize="large"/> </a> 
+            <a target="_blank" href="https://www.instagram.com/feliciarylander/" style={{color:"black", textDecoration: "none"}}> <InstagramIcon fontSize="large"/> </a>
+
+          </Typography>
 
         <Grid className={classes.gridItem} item xs={12} sm={12} md={12} lg={12}>
          <form className={classes.form}
@@ -81,8 +84,8 @@ const Messaging = () => {
 
            <div>
                 <TextField
-                       className={classes.textInput}
-                       variant="outlined"
+                       InputProps={{ className: classes.nameInput  }}
+                       variant="standard"
                        margin="normal"
                        label="Name"
                        type='text' 
@@ -92,9 +95,9 @@ const Messaging = () => {
                        {...register('user_name', { required: true, maxLength:20})}/> 
 
                 <TextField 
-                          className={classes.textInput}
+                          className={classes.subjectInput}
                           margin="normal"
-                          variant="outlined"
+                          variant="standard"
                           name='topic' 
                           label="Subject" 
                           error={errors.topic}
@@ -104,8 +107,8 @@ const Messaging = () => {
 
            <div> 
                 <TextField 
-                      className={classes.textInput}
-                      variant="outlined"
+                      className={classes.messageInput}
+                       variant="standard"
                        margin="normal"
                        label="Email"
                        type='email' 
@@ -117,12 +120,13 @@ const Messaging = () => {
 
            <div>
                 <TextField 
-                          className={classes.message}
+                          className={classes.messageInput}
                           margin="normal"
-                          variant="outlined"
+                          variant="standard"
                           name='message' 
                           label="Message" 
                           multiline 
+                          rows={2}
                           error={errors.message}
                           helperText={errors.message && "Must enter a message"}
                           {...register('message', { required: true, maxLength:3000})}/> 

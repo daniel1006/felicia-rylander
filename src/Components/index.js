@@ -1,4 +1,5 @@
 export { default as NavBar } from './NavBar/Navbar';
+export { default as BottomNav } from './BottomNav/BottomNav';
 export { default as Home } from '../Pages/Home/Home';
 export { default as Images } from '../Pages/Gallery/Images';
 export { default as Links } from '../Pages/Links/Links';
