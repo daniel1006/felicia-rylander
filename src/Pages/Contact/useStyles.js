@@ -48,7 +48,8 @@ const useStyles = makeStyles(theme => {
             outline: 'solid #90AEB0 3px',
      },
       buttonProgress: {
-            left: '63%',
+            left: '50%',
+            marginTop: '3.5%',
             position: 'absolute',
      },
 }    

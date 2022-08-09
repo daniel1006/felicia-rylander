@@ -4,24 +4,13 @@ const useStyles = makeStyles(theme => {
    return {
     Box: {
         height: '30vh',
+        background: 'black',
     },
     List: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    ListItem: {
-        listStyleType: 'none',
-        fontFamily: 'Georgia, Times New Roman, Times, serif',
-        fontSize: '2rem',
-        marginTop: '4vh',
-    },
-    ListItemMiddle: {
-        listStyleType: 'none',
-        fontFamily: 'Georgia, Times New Roman, Times, serif',
-        fontSize: '2rem',
-        padding: '3rem',
-        marginTop: '4vh',
+        color: 'white',
     },
     TradeMark: {
         color: 'grey',

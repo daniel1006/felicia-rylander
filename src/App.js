@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
-import { NavBar, Home, Images, Links, Messaging,FilmWork, Resume, BottomNav } from './Components';
+import { NavBar, Home, Images, Links, Messaging,FilmWork, Resume,  } from './Components';
 import './index.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
          <Route path="/images" component={Images}> <Images/> </Route>
          <Route path="/filmwork" component={FilmWork}> <FilmWork/> </Route>
          <Route path="/links" component={Links}> <Links/> </Route>
-         <Route path="/messaging" component={Messaging}> <Messaging/> <BottomNav/> </Route>
+         <Route path="/messaging" component={Messaging}> <Messaging/> </Route>
          <Route path="/resume" component={Resume}> <Resume/> </Route>
        </Switch>
      </Router>

@@ -8,7 +8,7 @@ import { init, sendForm } from 'emailjs-com';
 
 import './style.css';
 
-init("user_DnQCMfVnzpijnE8OO27EX")
+init("3nzy-AE_xUNtu22HF")
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -21,9 +21,8 @@ const Messaging = () => {
   
 
     const onSubmit = (data) =>  {
-        sendForm('default_service', 'template_zafyutb', '#service_8il6dbb')
+        sendForm('default_service', 'template_66kzhif', '#service_3hdcn6u')
         .then(function(response) {
-        document.location = "/thankyou"
           console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
           console.log('FAILED...', error);
@@ -79,7 +78,7 @@ const Messaging = () => {
 
         <Grid className={classes.gridItem} item xs={12} sm={12} md={12} lg={12}>
          <form className={classes.form}
-               id='service_8il6dbb'
+               id='service_3hdcn6u'
                onSubmit={handleSubmit(onSubmit)}>       
 
            <div>
@@ -91,7 +90,8 @@ const Messaging = () => {
                        type='text' 
                        name='user_name' 
                        error={errors.user_name}
-                       helperText={errors.user_name && "Name is required"}
+// the help error text is here in case I want to add an error text
+                       helperText={errors.user_name && ""}
                        {...register('user_name', { required: true, maxLength:20})}/> 
 
                 <TextField 
@@ -101,7 +101,7 @@ const Messaging = () => {
                           name='topic' 
                           label="Subject" 
                           error={errors.topic}
-                          helperText={errors.topic && "Must enter a subject matter"}
+                          helperText={errors.topic && ""}
                           {...register('topic', { required: true, maxLength:20})}/> 
           </div>
 
@@ -114,7 +114,7 @@ const Messaging = () => {
                        type='email' 
                        name='user_email' 
                        error={errors.user_email}
-                       helperText={errors.user_email && "Email is not valid"}
+                       helperText={errors.user_email && ""}
                       {...register('user_email', { required: true, pattern: /^\S+@\S+\.\S+$/ })}/> 
           </div>
 
@@ -126,9 +126,8 @@ const Messaging = () => {
                           name='message' 
                           label="Message" 
                           multiline 
-                          rows={2}
                           error={errors.message}
-                          helperText={errors.message && "Must enter a message"}
+                          helperText={errors.message && ""}
                           {...register('message', { required: true, maxLength:3000})}/> 
            </div>
 

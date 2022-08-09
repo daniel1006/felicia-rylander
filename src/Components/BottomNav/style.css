@@ -1,0 +1,22 @@
+.ListItem {
+    list-style-type: none;
+    font-family:'Georgia, Times New Roman, Times, serif';
+    margin-top: 7vh;
+}
+
+.ListItem:hover {
+    color:#90AEB0 ;
+    cursor: pointer;
+}
+
+.ListItemMiddle {
+    list-style-type: none;
+    font-family:'Georgia, Times New Roman, Times, serif';
+    padding: 2.5rem;
+    margin-top: 7vh;
+}
+
+.ListItemMiddle:hover {
+    color:#90AEB0 ;
+    cursor: pointer;
+}
